@@ -22,8 +22,8 @@ tau = 0.01 #zenith opacity, default 0.01
 #txtFilepath should be the txt file containing this data
 #this can be obtained by running fluxcheck.pro
 csvExists = True
-txtFilepath = "./results/sflux.txt"
-csvFilepath = "./results/sflux.csv"
+txtFilepath = "./data/sflux.txt"
+csvFilepath = "./data/sflux.csv"
 figurePath = "./figures/" #relative path in which to save figures
 
 #Define some colors

@@ -12,12 +12,12 @@ import glob
 import csv
 import math
 
-dirpath = "./results/gaussianFits/wholeRegions/"
+dirpath = "./data/gaussianFits/wholeRegions/"
 source = "regionH" #source to analyze: this assumes that there is a directory 
     # with this name
-dirpath = "./results/gaussianFits/" + source #this is where all CARTA Gaussian
+dirpath = "./data/gaussianFits/" + source #this is where all CARTA Gaussian
     # fit logs should be
-outputpath = "./results/cloudParameters/" + source + ".csv"
+outputpath = "./data/cloudParameters/" + source + ".csv"
 
 #ideally fit should already be done in km/s (or MHz), but if channel information is known, change these values
 #before running, ensure that all log files for a given source are in the same directory, and that directory paths are correct

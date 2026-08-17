@@ -41,10 +41,10 @@ f4 = "HVCData/asu.tsv" #table of HVCs
 useData = [f1, f3]
 deHeij = [237, 304, 307, 391, 402]
 
-path = "./results/cloudParameters/" #relative path
-filepath = path + "wholeCloudParameters/cloudParameters.csv" #path with all the
+path = "./" #relative path
+filepath = path + "data/cloudParameters.csv" #path with all the
     # cloud paramters CSV files. this can be obtained from cloudParameters.py
-outputpath = path + "wholeCloudParameters/derivedCloudParameters.csv"
+outputpath = path + "data/derivedCloudParameters.csv"
     # output path
 
 def avg(reader, key, errorKey):
