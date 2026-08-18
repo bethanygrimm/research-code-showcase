@@ -2,11 +2,13 @@
 
 ## About the Project
 This is the code I worked on during my summer undergraduate research appointment at Green Bank Observatory. I worked on a project **analyzing high-velocity clouds** (HVCs) between the galaxies M31 (Andromeda) and M33 (Triangulum). Data was collected using the Green Bank Telescope (GBT), which mapped **neutral hydrogen** abundances in the sky. The HVCs of interest between M31 and M33 exist in a line between the two galaxies and are not rotationally bound to either galaxy. The HVCs' origins are still unknown, so this code exists to **reduce GBT data** and **analyze the dynamics and parameters of these HVCs**.
+
 Once the report is published, it will be linked here!
 
 ## Dependencies
 Due to the nature of GBT data, the data required to run these files are **not** included in the repository. However, the folder `HVCData` includes data from various HVCs.
 `.pro` files are executed with GBTIDL (a variant of IDL), and `.py` files are executed with Python.
+
 If a `figures` directory is initialized in `HVC_project`, `cloudPlots.py` and `findTcal.py` can be run, and the resultant figures will show up there.
 
 ## Included Files
