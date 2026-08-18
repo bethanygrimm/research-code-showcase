@@ -7,6 +7,7 @@ Once the report is published, it will be linked here!
 ## Dependencies
 Due to the nature of GBT data, the data required to run these files are **not** included in the repository. However, the folder `HVCData` includes data from various HVCs.
 `.pro` files are executed with GBTIDL (a variant of IDL), and `.py` files are executed with Python.
+If a `figures` directory is initialized in `HVC_project`, `cloudPlots.py` and `findTcal.py` can be run, and the resultant figures will show up there.
 
 ## Included Files
 ### GBTIDL
