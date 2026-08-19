@@ -9,6 +9,7 @@ import numpy as np
 from spectral_cube import SpectralCube
 from astropy import log, units as u
 from astropy.io.fits import getval
+from labels import label_list
 import aplpy
 import matplotlib as plt
 import json
@@ -20,9 +21,9 @@ n_plots = 4
 
 figname = "Figures_1.png" #Output figure name
 #Input FITS file names
-fitsdir = "./downloads" #Relative path of directory where FITS files can be found
-cubedir = "./moment0s" #Relative path where moment-0 files are to be saved
-figdir = "./figures" #Relative path where moment-0 images are to be saved
+fitsdir = "./downloads/" #Relative path of directory where FITS files can be found
+cubedir = "./moment0s/" #Relative path where moment-0 files are to be saved
+figdir = "./figures/" #Relative path where moment-0 images are to be saved
 sources=["HH111mms_12CO_image_taper500k.pbcor.fits", 
          "HH212mms_12CO_image_taper500k.pbcor.fits", 
          "HH270mms1_12CO_image_taper500k.pbcor.fits", 
@@ -75,9 +76,10 @@ for i in range(n_plots):
     moment_0.hdu
 
 #now find the label list!
-#'.json/labels.json' can be created with the label_list function in labels.py
+#'.json/labels_orig.json' can be created with the label_list function in labels.py
+label_list()
 
-data = json.loads(open('./json/labels.json').read())
+data = json.loads(open('./json/labels_orig.json').read())
 l_list = data["Data"]
 no_data = False
 
@@ -174,12 +176,6 @@ for i in range(n_plots):
     
     # print(f.ax.get_xlim())
     # print(f.ax.get_ylim())
-    '''
-    if (not name == "HOPS-403"):
-        f.ax.set_xlim(255.5, 767.5)
-        f.ax.set_ylim(255.5, 767.5)
-    f.axis_labels.set_ypad(-1)
-    '''
     f.ax.set_xlim(255.5, 767.5)
     f.ax.set_ylim(255.5, 767.5)
 
@@ -187,5 +183,5 @@ for i in range(n_plots):
     f.add_colorbar()
     f.colorbar.set_axis_label_text("$Jy/beam\:km/s$")
     f.colorbar.set_axis_label_pad(1)
-savepath = figpath + figname
+savepath = figdir + figname
 fig.savefig(savepath)

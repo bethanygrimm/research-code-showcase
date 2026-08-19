@@ -12,7 +12,7 @@ def label_list():
     data6 = {}
     data6['header'] = []
 
-    with open ('table6.txt', 'r') as f:
+    with open ('./data/table6.txt', 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
             data6['header'].append(dict(row))
@@ -41,7 +41,7 @@ def label_list():
     dataE = {}
     dataE['header'] = []
 
-    with open ('tableE.txt', 'r') as f:
+    with open ('./data/tableE.txt', 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
             dataE['header'].append(dict(row))
@@ -62,7 +62,7 @@ def label_list():
     data8 = {}
     data8['header'] = []
 
-    with open ('table8.txt', 'r') as f:
+    with open ('./data/table8.txt', 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
             data8['header'].append(dict(row))

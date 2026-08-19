@@ -18,11 +18,13 @@ from astropy.wcs import utils
 from astropy.coordinates import SkyCoord
 import json
 from scipy.optimize import curve_fit
+from labels import label_list
 from labels import label_update
 from labels import correct_angle
 
 #have the full label list ready
-jsonpath = "./json/labels.json"
+label_list()
+jsonpath = "./json/labels_orig.json"
 
 data = json.loads(open(jsonpath).read())
 l_list = data["Data"]
