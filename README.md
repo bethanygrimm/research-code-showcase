@@ -6,4 +6,4 @@ These are samples of the programming work I've done for various physics and astr
 
 Due to the nature of astronomical data, this does **not** include all the used data or software dependencies required to fully run these programs. However, some sample output is included, and some functions and scripts can be run as-is.
 
-Plot-heavy scripts (such as `HVC_project/cloudPlots.py`) may be better run as a Jupyter notebook.
+Plot-heavy and iteration-heavy scripts (such as `HVC_project/cloudPlots.py` and `star_formation/position_angle_script.py`) may be better run as a Jupyter notebook.
