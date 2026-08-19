@@ -1,3 +1,11 @@
+'''
+This script creates plots and performs fits in order to analyze the relationship
+between opening angle and other parameters. It also compares the protostellar
+disk position angle and outflow position angle to see if they are perpendicular,
+and identifies any sources with large discrepancies between lobes. After
+initializing a `figures` directory in `star_formation`, this one can be run as-is.
+'''
+
 #imports
 import numpy as np
 import matplotlib

@@ -24,9 +24,9 @@ from labels import correct_angle
 
 #have the full label list ready
 label_list()
-jsonpath = "./json/labels_orig.json"
+jsonpath = "./json/labels.json"
 
-data = json.loads(open(jsonpath).read())
+data = json.loads(open("./json/labels_orig.json").read())
 l_list = data["Data"]
 
 #define arrays and functions
@@ -474,7 +474,7 @@ if extra_masking:
                 if rade < erb[k]:
                     maskb[i][j] = 0
                     image_datab[i][j] = 0
-            for k in range(len(exb)):
+            for k in range(len(exr)):
                 rade = math.sqrt(math.pow((i-eyr[k]), 2) + math.pow((j-exr[k]), 2))
                 if rade < err[k]:
                     maskr[i][j] = 0
